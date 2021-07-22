@@ -1,0 +1,37 @@
+.hero {
+  background-color: var(--footerColor--);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../image/backgraund.jpg);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title {
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 696px;
+  text-align: center;
+  color: var(--white--);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
+.button {
+  @extend %button
+  // display: block;
+//   margin: 0 auto;
+//   background-color: var(--brendColor--);
+//   color: var(--white--);
+//   border: none;
+//   padding: 10px 32px;
+//   &:hover {
+//     background-color: var(--white--);
+//     color: var(--titleColor--);
+//     cursor: pointer;
+//   };;
+}

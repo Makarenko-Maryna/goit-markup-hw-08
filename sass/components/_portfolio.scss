@@ -1,0 +1,72 @@
+.portfolio-content {
+  padding: 94px 0;
+}
+
+.portfolio__button-list {
+  margin-left: 280px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .portfolio-buttom { */
+.portfolio__button-item {
+  margin-right: 8px;
+}
+
+.activ-prodject {
+  margin-top: calc(-1 * var(--white--));
+  margin-left: calc(-1 * var(--white--));
+  display: flex;
+  flex-basis: calc(100% / 3 - var(--white--));
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-portfolio {
+  width: 370px;
+}
+
+.example-of-prodject {
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  & p {
+    padding: 4px 24px 20px 24px;
+  }
+}
+.card-portfolio {
+  position: relative;
+  overflow: hidden;
+  & p {
+    padding: 63px 24px;
+    color: var(--white--);
+  }
+}
+
+.hover-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  background-color: rgba(33, 149, 243, 0.904);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  .example-of-prodject:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.activ-prodject h3 {
+  font-size: 18px;
+  color: var(--titleColor--);
+  margin: 20px 0 0 24px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.activ-prodject li:hover {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}

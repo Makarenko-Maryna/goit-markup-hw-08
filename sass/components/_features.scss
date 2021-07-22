@@ -1,0 +1,29 @@
+.features__list {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.features__item {
+  margin-right: 30px;
+}
+
+.features__icon {
+  padding: 25px 100px;
+  background: var(--sectionColor--);
+}
+
+.features__text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.features__h3 {
+  /* height: 14px; */
+  color: var(--titleColor--);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 270px;
+}

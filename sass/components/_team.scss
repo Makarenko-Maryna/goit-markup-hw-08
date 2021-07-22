@@ -1,0 +1,30 @@
+.team {
+  background-color: var(--sectionColor--);
+}
+
+.team__h3 {
+  height: 19px;
+  color: var(--titleColor--);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.team__item {
+  background-color: var(--white--);
+}
+
+.team__text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team__social-list {
+  margin: 16px 32px 30px 32px;
+}

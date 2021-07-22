@@ -1,0 +1,27 @@
+.client__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client__link {
+  margin-right: 30px;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--socialLink--);
+  align-items: center;
+  &:hover {
+    border: 1px solid var(--brendColor--);
+  }
+}
+.client__icons {
+  fill: var(--socialLink--);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transition-property: border, color;
+    fill: var(--brendColor--);
+  }
+}

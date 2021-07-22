@@ -1,0 +1,109 @@
+.footer {
+  background-color: var(--footerColor--);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white--);
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & .conteiner {
+    /* align-items: baseline; */
+    display: flex;
+    /* justify-content: flex-start; */
+  }
+}
+
+.footer__logo {
+  color: var(--white--);
+  text-decoration: none;
+}
+
+.footer__address {
+  margin-top: 20px;
+}
+.footer__contact {
+  margin-top: 9px;
+}
+.footer__contact a {
+  color: var(--white--);
+  text-decoration: none;
+}
+.footer .h3-features {
+  color: var(--white--);
+}
+
+.footer__social {
+  margin-left: 70px;
+}
+.footer__icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: white;
+  margin-top: 20px;
+}
+
+/* Подписывайтеся */
+.footer__form {
+  margin-left: 93px;
+}
+.footer__join-title {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.14;
+  color: var(--white--);
+}
+.footer__join-box {
+  display: flex;
+}
+.footer__join-input {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-top: 20px;
+  margin-right: 12px;
+  color: var(--socialLink--);
+  background: var(--footerColor--);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__join-button {
+  @extend %button
+  // border-radius: 4px;
+  // align-items: center;
+  // position: relative;
+  // fill: #ffffff;
+  // margin-left: 12px;
+  // font-style: normal;
+  // font-weight: bold;
+  // font-size: 16px;
+  // border-color: transparent;
+  // cursor: pointer;
+  // display: block;
+
+  // background-color: var(--brendColor--);
+  // color: var(--white--);
+  // border: none;
+  // padding: 10px 32px;;;;;;;;;;;;;
+}
+.footer__join-button:hover {
+  background-color: var(--white--);
+  color: var(--titleColor--);
+  cursor: pointer;
+}
+
+.footer__join-icon {
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+  padding-left: 0;
+  fill: tomato;
+  &:hover {
+    transition-property: border, color;
+    fill: var(--titleColor--);
+  }
+}

@@ -1,0 +1,27 @@
+/* Универсальный селектор */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto";
+  color: var(--textColor--);
+  list-style: none;
+  text-decoration: none;
+}
+
+/* header */
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  text-decoration: none;
+}
+.conteiner ul {
+  list-style-type: none;
+}
+section {
+  padding: 94px 0;
+}

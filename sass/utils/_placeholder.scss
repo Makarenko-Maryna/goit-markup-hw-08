@@ -1,0 +1,31 @@
+%button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--brendColor--);
+  color: var(--white--);
+  border: none;
+  padding: 10px 32px;
+  &:hover {
+    background-color: var(--white--);
+    color: var(--titleColor--);
+    cursor: pointer;
+  }
+}
+.social-link {
+  display: flex;
+  justify-content: flex-start;
+}
+.social-list__icon {
+  fill: var(--socialLink--);
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  padding: 12px;
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: var(--white--);
+    background-color: var(--brendColor--);
+  }
+}
