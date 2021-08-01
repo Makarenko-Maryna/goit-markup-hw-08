@@ -5,6 +5,9 @@
   color: var(--white--);
   border: none;
   padding: 10px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
   &:hover {
     background-color: var(--white--);
     color: var(--titleColor--);
