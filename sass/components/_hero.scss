@@ -2,23 +2,54 @@
   background-color: var(--footerColor--);
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../image/backgraund.jpg);
-  height: 600px;
+  background-size: cover;
+  // max-width: 1600px;
+  // height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/Header-m.jpg);
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/Header-t-2x.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/Header-d-2x.jpg);
+  }
 }
 
 .hero__title {
-  font-size: 44px;
   font-weight: 900;
   text-transform: uppercase;
-  width: 696px;
+  width: 360px;
   text-align: center;
   color: var(--white--);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 28px;
+  // margin-bottom: 28px;
+  //   @media screen and (min-width: 480px) {
+  font-size: 26px;
+  line-height: 42px;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .button {
@@ -33,5 +64,5 @@
 //     background-color: var(--white--);
 //     color: var(--titleColor--);
 //     cursor: pointer;
-//   };;
+//   };;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 }
