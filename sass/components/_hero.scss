@@ -3,19 +3,31 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // max-width: 1600px;
-  // height: 600px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../image/Header-m.jpg);
-
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/Header-m.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/Header-m-2x.jpg);
+  }
   @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/Header-t.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -24,6 +36,12 @@
       url(../image/Header-t-2x.jpg);
   }
   @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/Header-d.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -47,7 +65,7 @@
   line-height: 42px;
 
   @media screen and (min-width: 1200px) {
-    width: 696px;
+    width: 600px;
     font-size: 44px;
   }
 }
@@ -64,5 +82,5 @@
 //     background-color: var(--white--);
 //     color: var(--titleColor--);
 //     cursor: pointer;
-//   };;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+//   };;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 }

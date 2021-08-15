@@ -21,27 +21,26 @@
   background-color: var(--white--);
   padding: 40px;
 }
-.close {
+.btn-close {
   display: block;
   position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 11px;
-  height: 11px;
+  top: 12px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  border: 0;
-  fill: var(--titleColor--);
-  &:hover {
-    color: var(--brendColor--);
-    stroke: var(--brendColor--);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  &:hover,
+  &:focus {
+    fill: var(--brendColor--);
   }
 }
-.close-icon {
+.btn-close__icon {
   position: absolute;
-  width: 11px;
-  height: 11px;
+  top: 50%;
+  left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  fill: currentColor;
 }
 .form__order {
   display: flex;
@@ -49,6 +48,7 @@
 }
 .form__title {
   font-size: 20px;
+  line-height: 30px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 12px;
@@ -109,20 +109,28 @@
 }
 
 .label__note {
+  height: 120px;
   padding: 12px 14px;
+  margin-bottom: 20px;
   resize: none;
 }
 
-.chek {
+.check {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  letter-spacing: 0.03em;
   position: relative;
 }
-.chek__order:checked + .icon-check {
+.check__order:checked + .icon__check {
   background-color: var(--brendColor--);
 }
+.check__order {
+  margin-right: 9px;
+  justify-content: start;
+}
+
 .check__icon {
   position: absolute;
   left: 6%;
@@ -130,16 +138,18 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
-  border-radius: 4px;
   cursor: pointer;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 2px solid rgba(33, 33, 33, 0.2);
   margin-right: 8.38px;
   border-radius: 2px;
   fill: var(--white--);
-  background-origin: border-box;
+  background: var(--white--);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-contract {
+  text-decoration: underline;
+  color: var(--brendColor--);
 }
 
 // .agree {
@@ -159,9 +169,4 @@
   padding: 10px 55px;
   font-size: 16px;
   line-height: 1.875;
-
-  background-color: var(--brendColor--);
-  color: var(--white--);
-  border: none;
-  padding: 10px 32px;
 }
